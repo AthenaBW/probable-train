@@ -1,5 +1,5 @@
 // Import required modules and classes
-const inquirer = require('inquirer');
+const inquirer = require('inquirer')
 const fs = require('fs');
 const { Triangle, Square, Circle } = require('./lib/shapes');
 
@@ -98,5 +98,5 @@ function promptUser() {
     });
 }
 
-// Starts the application by prompting the user for input
+// Starts the application by prompting user for input
 promptUser();
