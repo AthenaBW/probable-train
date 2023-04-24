@@ -47,7 +47,7 @@ function generateSVGFile(filename, answers) {
   svgString += '</svg>';
 
   // Use file system module to generate SVG file with given filename and SVG string
-  fs.writeFile("./lib/Logo.svg", svgString, (err) => {
+  fs.writeFile("./examples/Logo.svg", svgString, (err) => {
     if (err) {
       console.log(err);
     } else {
