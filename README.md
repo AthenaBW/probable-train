@@ -4,6 +4,8 @@
 
 A command-line interface (CLI) tool that generates a simple logo in SVG format based on user input. It uses Node.js and the Inquirer package to prompt the user for text, text color, shape, and shape color, and generates an SVG file with the chosen parameters. Jest application also incorporated for testing.
 
+https://drive.google.com/file/d/13lwtKHsGeFl5j50gJ072kYPVQmGaylSq/view
+
 ![Alt text](lib/Screenshot%202023-04-24%20181520.png)
 
 
