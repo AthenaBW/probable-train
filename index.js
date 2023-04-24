@@ -4,7 +4,7 @@ const fs = require('fs');
 const { Triangle, Square, Circle } = require('./lib/shapes');
 
 // Define function to generate SVG file
-function generateSVGFile(fileName, answers) {
+function generateSVGFile(filename, answers) {
   // Start with an empty SVG string
   let svgString = '';
 
@@ -47,7 +47,7 @@ function generateSVGFile(fileName, answers) {
   svgString += '</svg>';
 
   // Use file system module to generate SVG file with given filename and SVG string
-  fs.writeFile(fileName, svgString, (err) => {
+  fs.writeFile("./lib/Logo.svg", svgString, (err) => {
     if (err) {
       console.log(err);
     } else {
@@ -69,7 +69,7 @@ function promptUser() {
       // Text color prompt
       {
         type: 'input',
-        message: 'Choose text color (Enter color keyword OR a hexadecimal number)',
+        message: 'Choose text color (Enter color keyword or a hexadecimal number)',
         name: 'textColor',
       },
       // Shape choice prompt
@@ -82,7 +82,7 @@ function promptUser() {
       // Shape color prompt
       {
         type: 'input',
-        message: 'Choose shape color (Enter color keyword OR a hexadecimal number)',
+        message: 'Choose shape color (Enter color keyword or a hexadecimal number)',
         name: 'shapeBackgroundColor',
       },
     ])
